@@ -68,6 +68,16 @@ swiftmailer:
     password: '%mailer_password%'
     spool: { type: memory }
 
+guzzle:
+    # (de)activate logging/profiler; default: %kernel.debug%
+    logging: %kernel.debug%
+
+    clients:
+        sso:
+            base_url: "http://sso_idp.com/"
+            headers:
+                Accept: "application/json"
+
 krtv_single_sign_on_service_provider:
     host:                 sso_idp.com
     host_scheme:          http
@@ -87,7 +97,7 @@ krtv_single_sign_on_service_provider:
 
                     guzzle:
                         # in case you don't have a guzzle client, you must create one
-                        client:   app_bundle.guzzle_service
+                        client:   guzzle.client.sso
                         # the route that was created in the IdP bundle
                         resource: http://sso_idp.com/internal/v1/sso
 

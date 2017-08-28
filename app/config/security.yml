@@ -17,7 +17,7 @@ security:
             pattern: ^/
             sso:
                 require_previous_session: false
-                provider:                 main
+                provider:                 in_memory #main
                 check_path:               /otp/validate/     # Same as in app/config/routing.yml
 
                 sso_scheme:               http               # Required

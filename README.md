@@ -13,5 +13,7 @@ https://www.korotovsky.io/2015/08/16/a-quick-way-to-build-single-sign-on-authent
 
 https://github.com/korotovsky/SingleSignOnServiceProviderBundle
 
-#Installation log
+#Installation addon log
 
+    security.yml => provider: in_memory #main
+    guzzle : eightpoints/guzzle-bundle
