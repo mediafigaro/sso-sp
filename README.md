@@ -5,15 +5,15 @@ A Symfony project created on August 28, 2017, 2:38 pm.
 
 Implementaion of Korotovskii's SSO solution for Symfony.
 
-#Article
+# Article
 
 https://www.korotovsky.io/2015/08/16/a-quick-way-to-build-single-sign-on-authentication-in-symfony2/
 
-#Code
+# Code
 
 https://github.com/korotovsky/SingleSignOnServiceProviderBundle
 
-#Installation addon log
+# Installation addon log
 
     security.yml => provider: in_memory #main
     guzzle : eightpoints/guzzle-bundle
