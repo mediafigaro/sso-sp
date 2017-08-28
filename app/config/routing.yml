@@ -1,3 +1,7 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+otp:
+    # this needs to be the same as the check_path, specified later on in security.yml
+    path: /otp/validate/
