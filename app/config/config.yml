@@ -74,12 +74,12 @@ guzzle:
 
     clients:
         sso:
-            base_url: "http://sso_idp.com/"
+            base_url: "http://sso-idp.com/"
             headers:
                 Accept: "application/json"
 
 krtv_single_sign_on_service_provider:
-    host:                 sso_idp.com
+    host:                 sso-idp.com
     host_scheme:          http
 
     login_path:           /sso/login/
@@ -99,7 +99,7 @@ krtv_single_sign_on_service_provider:
                         # in case you don't have a guzzle client, you must create one
                         client:   guzzle.client.sso
                         # the route that was created in the IdP bundle
-                        resource: http://sso_idp.com/internal/v1/sso
+                        resource: http://sso-idp.com/internal/v1/sso
 
     otp_parameter:        _otp
     secret_parameter:     secret

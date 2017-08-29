@@ -21,10 +21,10 @@ security:
                 check_path:               /otp/validate/     # Same as in app/config/routing.yml
 
                 sso_scheme:               http               # Required
-                sso_host:                 sso_idp.com    # Required
+                sso_host:                 sso-idp.com    # Required
 
                 sso_otp_scheme:           http               # Optional
-                sso_otp_host:             sso_sp.com      # Optional
+                sso_otp_host:             sso-sp.com      # Optional
 
                 sso_failure_path:         /login             # Can also be as an absolute path to service provider
                 sso_path:                 /sso/login/        # SSO endpoint on IdP.
@@ -40,4 +40,4 @@ security:
             logout:
                 invalidate_session: true
                 path:               /logout
-                target:             http://sso_idp.com/sso/logout?service=consumer1
+                target:             http://sso-idp.com/sso/logout?service=consumer1

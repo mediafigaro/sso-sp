@@ -1,4 +1,4 @@
-sso_sp
+sso-sp
 ======
 
 A Symfony project created on August 28, 2017, 2:38 pm.

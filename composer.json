@@ -1,5 +1,5 @@
 {
-    "name": "kbesnard/sso_sp",
+    "name": "kbesnard/sso-sp",
     "license": "proprietary",
     "type": "project",
     "autoload": {
